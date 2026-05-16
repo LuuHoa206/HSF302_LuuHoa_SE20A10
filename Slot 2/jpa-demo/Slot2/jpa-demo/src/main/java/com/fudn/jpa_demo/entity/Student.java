@@ -1,4 +1,4 @@
-package com.fudn.demo;
+package com.fudn.jpa_demo.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,14 +20,12 @@ public class Student {
 
     private Integer age;
 
-    // Constructor, getter, setter, toString...
-    public Student() {}
-
+    public Student() {
+    }
     public Student(String fullName, String email, Integer age) {
         this.fullName = fullName;
         this.email = email;
         this.age = age;
     }
-
-    // getter/setter omitted for brevity (Lombok @Data đã tự động tạo)
 }
+
